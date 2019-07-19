@@ -9,7 +9,7 @@
 import AppKit
 
 extension NSMenuItem {
-  convenience init(title: String, action: Selector, baseKey: Character? = nil, keyModifiers: NSEventModifierFlags = []) {
+    convenience init(title: String, action: Selector, baseKey: Character? = nil, keyModifiers: NSEvent.ModifierFlags = []) {
     self.init(title: title, action: action, keyEquivalent: baseKey?.toString() ?? "")
     
     self.keyEquivalentModifierMask = keyModifiers

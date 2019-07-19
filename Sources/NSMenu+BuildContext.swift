@@ -44,7 +44,7 @@ extension NSMenu {
     }
     
     @discardableResult
-    public func addItem(title: String, action: Selector, baseKey: Character? = nil, keyModifiers: NSEventModifierFlags = []) -> NSMenuItem {
+    public func addItem(title: String, action: Selector, baseKey: Character? = nil, keyModifiers: NSEvent.ModifierFlags = []) -> NSMenuItem {
       let menuItem = NSMenuItem(title: title, action: action, baseKey: baseKey, keyModifiers: keyModifiers)
       
       menu.addItem(menuItem)
